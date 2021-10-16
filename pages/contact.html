@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300&Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../../fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/layout2.css" />
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span class="logo">Portfolio</span>
+      <nav id="nav">
+        <button id="menu-button" class="menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="links" class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="page">
+      <h1>Contact Me!</h1>
+      <div class="contact">
+        <img src="../images/profile4.jpeg" alt="Profile" />
+        <div class="text-content">
+          <h2>Emilia Myllykylä</h2>
+          <div class="info">
+            <p><i class="fas fa-map-marker-alt icon"></i> Salo / Lisbon</p>
+            <p>
+              <a href="mailto:emilia.myllykyla@pm.me"
+                ><i class="fas fa-envelope icon"></i> emilia.myllykyla@pm.me</a
+              >
+            </p>
+          </div>
+          <div class="social">
+            <a href="https://github.com/emiliamyllykyla" target="_blank">
+              <i class="fab fa-github-square fa-2x icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emilia-myllykyla/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-2x icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-home">
+        <h4><a href="../index.html">Home</a></h4>
+        <p><a href="../index.html#skills">Skills</a></p>
+      </div>
+      <div class="footer-projects">
+        <h4><a href="projects.html">Projects</a></h4>
+        <p>
+          <a href="projects.html#inspirationgram">Inspirationgram</a>
+        </p>
+        <p>
+          <a href="projects.html#coins">Coins</a>
+        </p>
+        <p>
+          <a href="projects.html#houseplants-guide">Houseplants Guide</a>
+        </p>
+        <p>
+          <a href="projects.html#munakello">Munakello</a>
+        </p>
+        <p>
+          <a href="projects.html#kuusjoki">Kuusjoki</a>
+        </p>
+        <p>
+          <a href="projects.html#sudoku">Sudoku</a>
+        </p>
+      </div>
+      <div class="footer-contact">
+        <h4><a href="contact.html">Contact</a></h4>
+        <p>Emilia Myllykylä</p>
+        <p><i class="fas fa-map-marker-alt"></i> Salo / Lisbon</p>
+        <p><i class="fas fa-envelope"></i> emilia.myllykyla@pm.me</p>
+        <div class="social">
+          <a href="https://github.com/emiliamyllykyla" target="_blank">
+            <i class="fab fa-github-square fa-2x icon"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emilia-myllykyla/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-2x icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const button = document.getElementById("menu-button");
+      const nav = document.getElementById("nav");
+      button.addEventListener("click", function () {
+        nav.classList.toggle("show");
+      });
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 750) nav.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

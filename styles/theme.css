@@ -1,0 +1,36 @@
+:root {
+  --color-00: #37094d;
+  --color-00-rgb: 55, 9, 77;
+  --color-01: #960c56;
+  --color-01-rgb: 150, 12, 86;
+  --color-02: #e2a2c5;
+  --color-03: #ffffff;
+  --color-05: #202020;
+
+
+  --color-accent: var(--color-01);
+  --color-bg-primary: var(--color-03);
+  --color-bg-secondary: var(--color-02);
+  --color-fg: var(--color-05);
+
+
+  /* Black */
+  --icon-filter: brightness(0);
+  /* White */
+  --icon-filter-hero: brightness(0) invert(1);
+  /* --color-02 */
+  --icon-filter-accent: brightness(0) saturate(100%) invert(88%) sepia(53%)
+    saturate(3109%) hue-rotate(280deg) brightness(102%) contrast(77%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: var(--color-02);
+    --color-bg-primary: var(--color-05);
+    --color-bg-secondary: var(--color-01);
+    --color-fg: var(--color-03);
+
+    /* White */
+    --icon-filter: brightness(0) invert(1);
+  }
+}

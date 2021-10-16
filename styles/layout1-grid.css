@@ -1,0 +1,29 @@
+:root {
+  --hero-columns: 1fr 1fr;
+  --hero-rows: 1fr 6fr 6fr;
+
+  --hero-img-row: 1 / 3;
+  --hero-img-column: 1 / -1;
+
+  --hero-text-row: 3 / 4;
+  --hero-text-column: 1 / -1;
+
+  --nav-row: 1 / -1;
+  --nav-column: 1 / -1;
+}
+
+@media only screen and (min-width: 750px) {
+  :root {
+    --hero-columns: 1fr 4fr 2fr 4fr;
+    --hero-rows: 2fr 12fr;
+
+    --hero-img-row: 1 / -1;
+    --hero-img-column: 3 / -1;
+
+    --hero-text-row: 2 / -1;
+    --hero-text-column: 1 / 3;
+
+    --nav-row: 1 / 2;
+    --nav-column: 2 / 4;
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300&Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/layout1-grid.css" />
+    <link rel="stylesheet" href="./styles/layout1.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <span class="logo">Portfolio</span>
+      <nav id="nav" class="hero-nav">
+        <button id="menu-button" class="menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="links" class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./pages/projects.html">Projects</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <img class="hero-img" src="./images/profile1.jpg" alt="Profile" />
+      <div class="hero-text">
+        <h1>Hello, I'm Emilia.</h1>
+        <p>
+          I am self-studying front-end web development, available for hire! On
+          this page you can see my <a href="#skills">SKILLS</a> and explore my
+          <a href="./pages/projects.html">PROJECTS</a>. I'm looking forward to
+          hearing from you!
+          <span class="social">
+            <a href="https://github.com/emiliamyllykyla" target="_blank">
+              <i class="fab fa-github-square fa-2x icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/emilia-myllykyla/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-2x icon"></i>
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="page">
+      <div id="skills" class="box">
+        <h2>Skills</h2>
+        <ul class="skills skills-primary">
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+            >
+              <img src="images/css3.png" alt="CSS3 icon" />
+              <span>CSS3</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              <img src="images/html5.png" alt="HTML5 icon" />
+              <span>HTML5</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+            >
+              <img src="images/js.png" alt="JavaScript icon" />
+              <span>JavaScript ES6</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              <img src="images/ts.png" alt="TypeScript icon" />
+              <span>TypeScript</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://reactjs.org/" target="_blank">
+              <img src="images/react.png" alt="React icon" />
+              <span>React</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="skills skills-secondary">
+          <li>
+            <a href="https://redux.js.org/" target="_blank">
+              <img src="images/redux.png" alt="Redux icon" />
+              <span>Redux</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://firebase.google.com/" target="_blank">
+              <img src="images/firebase.png" alt="Firebase icon" />
+              <span>Firebase</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/" target="_blank">
+              <img src="images/git.png" alt="Git icon" />
+              <span>Git</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.djangoproject.com/" target="_blank">
+              <img
+                src="images/django.png"
+                alt="Django icon"
+                class="img-icon-dark"
+              />
+              <span>Django</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.python.org/" target="_blank">
+              <img src="images/python.png" alt="Python icon" />
+              <span>Python</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.sqlite.org/index.html" target="_blank">
+              <img src="images/sqlite.png" alt="SQLite icon" />
+              <span>SQL (SQLite)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Projects</h2>
+        <div class="projects-preview">
+          <div class="card">
+            <img src="./images/coins.png" alt="Coins -project" />
+            <h3 class="card-title">Coins</h3>
+            <p>
+              Cryptocurrency dashboard for Binance with Coingecko information.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/ig.png" alt="Inspirationgram -project" />
+            <h3 class="card-title">Inspirationgram</h3>
+            <p>Instagram inspired image hosting app using Firebase.</p>
+          </div>
+          <div class="card">
+            <img
+              src="./images/houseplants-guide.png"
+              alt="Houseplants Guide -project"
+            />
+            <h3 class="card-title">Houseplants Guide</h3>
+            <p>
+              Indoors plant decoration inspiration and care instructions app.
+            </p>
+          </div>
+        </div>
+
+        <a class="button" href="./pages/projects.html">see more!</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-home">
+        <h4><a href="index.html">Home</a></h4>
+        <p><a href="#skills">Skills</a></p>
+      </div>
+      <div class="footer-projects">
+        <h4><a href="./pages/projects.html">Projects</a></h4>
+        <p>
+          <a href="./pages/projects.html#inspirationgram">Inspirationgram</a>
+        </p>
+        <p>
+          <a href="./pages/projects.html#coins">Coins</a>
+        </p>
+        <p>
+          <a href="./pages/projects.html#houseplants-guide"
+            >Houseplants Guide</a
+          >
+        </p>
+        <p>
+          <a href="./pages/projects.html#munakello">Munakello</a>
+        </p>
+        <p>
+          <a href="./pages/projects.html#kuusjoki">Kuusjoki</a>
+        </p>
+        <p>
+          <a href="./pages/projects.html#sudoku">Sudoku</a>
+        </p>
+      </div>
+      <div class="footer-contact">
+        <h4><a href="./pages/contact.html">Contact</a></h4>
+        <p>Emilia Myllykylä</p>
+        <p><i class="fas fa-map-marker-alt"></i> Salo / Lisbon</p>
+        <p><i class="fas fa-envelope"></i> emilia.myllykyla@pm.me</p>
+        <div class="social">
+          <a href="https://github.com/emiliamyllykyla" target="_blank">
+            <i class="fab fa-github-square fa-2x icon"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/emilia-myllykyla/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin fa-2x icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const button = document.getElementById("menu-button");
+      const nav = document.getElementById("nav");
+      button.addEventListener("click", function () {
+        nav.classList.toggle("show");
+      });
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 750) nav.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

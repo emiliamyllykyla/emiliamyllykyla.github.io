@@ -1,0 +1,134 @@
+nav {
+  grid-row: var(--nav-row);
+  grid-column: var(--nav-column);
+
+  /* NAV SUBGRID */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 12fr;
+
+  width: 100vw;
+  height: 100vh;
+  text-align: right;
+  z-index: 1;
+  color: var(--color-03);
+}
+
+.logo {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  z-index: 1;
+  padding: 0.5rem 0 0 1rem;
+  color: var(--color-03);
+  font-size: 1.5rem;
+  text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  font-family: "Roboto", sans-serif;
+}
+
+.links li {
+  text-transform: uppercase;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.links a {
+  font-size: 0.8em;
+  color: var(--color-03);
+  text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.links a:hover {
+  color: var(--color-02);
+}
+
+/* DROPDOWN MENU MOBILE */
+.links {
+  /* NAV SUBGRID */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  height: 0;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  opacity: 0.8;
+  padding: 0.5rem;
+}
+
+.menu-button {
+  /* NAV SUBGRID */
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  text-align: right;
+
+  border: 0;
+  background-color: transparent;
+  color: var(--color-04);
+  font-size: 1.5rem;
+  text-shadow: -4px 4px 5px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.links a {
+  display: block;
+}
+
+.show {
+  /* nav */
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.show .links {
+  height: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .logo {
+    color: var(--color-02);
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    align-self: baseline;
+  }
+
+  nav {
+    display: initial;
+    height: auto;
+    width: 100%;
+    padding-top: 2rem;
+    align-self: baseline;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .links {
+    /* NAV SUBGRID */
+    grid-column: unset;
+    grid-row: unset;
+    width: 100%;
+    max-width: 600px;
+    overflow: unset;
+
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0;
+  }
+
+  .links li {
+    margin: 0;
+  }
+}
