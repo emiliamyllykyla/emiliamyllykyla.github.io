@@ -3,7 +3,7 @@
   grid-template-columns: var(--hero-columns);
   grid-template-rows: var(--hero-rows);
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(
     to top right,
     var(--color-00),
@@ -70,12 +70,6 @@
 }
 
 @media only screen and (min-width: 750px) {
-  .hero {
-    height: 100vh;
-    max-height: 500px;
-    min-height: unset;
-  }
-
   .hero-img {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
     width: 55vw;
