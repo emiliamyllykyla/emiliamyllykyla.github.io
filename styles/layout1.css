@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: var(--hero-columns);
   grid-template-rows: var(--hero-rows);
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(
     to top right,
@@ -30,6 +30,7 @@
   max-width: 600px;
   padding: 1rem;
   height: 40vh;
+  z-index: 2;
 }
 
 .hero h1 {
