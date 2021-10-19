@@ -78,6 +78,12 @@ nav {
   font-size: 1.5rem;
   text-shadow: -4px 4px 5px rgba(0, 0, 0, 1);
   cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-button i {
+  height: 100%;
 }
 
 .links a {
