@@ -1,10 +1,10 @@
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 .hero,
 .page > *,
-.footer {
+footer {
   scroll-snap-align: start;
 }
 
@@ -82,7 +82,6 @@ html {
 
 .projects-preview .card-title {
   margin-bottom: 1em;
-
 }
 
 .projects-preview .card img {
