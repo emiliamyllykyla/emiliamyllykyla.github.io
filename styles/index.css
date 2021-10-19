@@ -3,8 +3,8 @@ html {
 }
 
 .hero,
-.page > *,
-footer {
+.page > *, 
+.footer {
   scroll-snap-align: start;
 }
 
